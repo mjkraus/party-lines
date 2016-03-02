@@ -1,6 +1,13 @@
 var express = require('express');
+// var fs = require('fs');
 // calls the app function in express
 var app = express();
+// var Highcharts = require('highcharts');
+
+// Load module after Highcharts is loaded
+// require('highcharts/modules/exporting')(Highcharts);
+
+// var sparkline = require("./public/js/sparkline").sparkline;
 
 // var Highcharts = require('highcharts');
 
@@ -27,7 +34,6 @@ app.set('view engine', 'ejs');
 // the route get it for this request
 app.get('/', function(req,res){
 	res.render('index');
-	// res.send('');
 });
 
 // // SETS UP EXPRESS
@@ -45,5 +51,6 @@ app.listen(port);
 
 // app.get('/', function(req, res){
 //   res.render('./views/index.ejs');
-// });
+// // });
+// sparkline();
 console.log('The server started on ' + port);
