@@ -1,6 +1,14 @@
 var express = require('express');
 // calls the app function in express
 var app = express();
+
+// var Highcharts = require('highcharts');
+
+// Load module after Highcharts is loaded
+// require('highcharts/modules/exporting')(Highcharts);
+
+// Create the chart
+// Highcharts.chart('container', { /*Highcharts options*/ });
 // var d3 = require('d3');
 // var morgan = require('morgan');
 // var router = express.Router();

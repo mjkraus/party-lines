@@ -1,6 +1,7 @@
 // quiz based on http://www.nytimes.com/interactive/2016/us/elections/candidates-on-the-issues.html
 // Same-Sex Marriage, Israel, Climate Change, Trans-Pacific Partnership, Syrian No-Fly Zone,
 // N.S.A,China
+// http://blog.kevinchisholm.com/javascript/getting-started-with-highcharts-part-i-basic-charts/
   var quoteArray = [{
     topic: "Immigration",
     quote: "I would secure the borders — north, south, east and west.",
@@ -184,3 +185,79 @@
     score.append(results).fadeIn();
 
   };
+
+// ========================
+// ========================
+// sparkline charts
+// ========================
+// ========================
+
+// http://jsfiddle.net/cainmodyo/VhxDA/  
+// http://jsfiddle.net/gh/get/jquery/1.7.1/highslide-software/highcharts.com/tree/master/samples/highcharts/tooltip/backgroundcolor-gradient/
+// http://www.pewresearch.org/fact-tank/2014/06/12/7-things-to-know-about-polarization-in-america/
+
+$(function () {
+    $('#test').highcharts({
+        chart:{
+            margin:[0, 0, 0, 0],
+            backgroundColor:'transparent'
+        },
+
+        tooltip: {
+            // backgroundColor: {
+            //     linearGradient: [0, 0, 0, 60],
+            //     stops: [
+            //         [0, '#FFFFFF'],
+            //         [1, '#E0E0E0']
+            //     ]
+            // },
+            // borderWidth: 1,
+                // borderColor: '#AAA'
+        backgroundColor: null,
+        borderWidth: 0,
+        shadow: false,
+        useHTML: true,
+        hideDelay: 0,
+        shared: true,
+        padding: 0,
+
+        },
+
+        title:{
+            text:''
+        },
+        credits:{
+            enabled:false
+        },
+        xAxis:{
+            labels:{
+                enabled:false
+            }
+        },
+        yAxis:{
+            maxPadding:0,
+            minPadding:0,
+            gridLineWidth: 0,
+            endOnTick:false,
+            labels:{
+                enabled:false
+            }
+        },
+
+        legend:{
+            enabled:false
+        },
+
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar']
+        },
+        // Unfavorable attitude dems to reps
+        series: [{name: 'dem hate',
+            data: [16, 29, 38]
+        }]
+    });
+
+    
+    
+    
+});
