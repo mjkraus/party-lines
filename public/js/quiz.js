@@ -67,6 +67,7 @@
   var selections = []; //Array containing user choices
   var quiz = $('#quiz'); //Quiz div object
   var score = $('#score'); //Score div object
+  var results = $('#results');
   var rep = 0; //tracks republican 
   var disrep = 0;
   var dem = 0;
@@ -81,9 +82,12 @@
       id: 'quote'
     });
     
-    var header = $('<h2>Question ' + (index + 1) + ':</h2>');
-    createQuoteDiv.append(header);
-    
+    // var header = $('<h2>Question ' + (index + 1) + ':</h2>');
+    // createQuoteDiv.append(header);
+
+    var topic = $('<h3>').append(quoteArray[index].topic);
+    createQuoteDiv.append(topic);
+
     var question = $('<p>').append(quoteArray[index].quote);
     createQuoteDiv.append(question);
     
@@ -136,15 +140,35 @@
         };  
       };
       // return (rep, dem);
-        console.log("rep" + rep + "dem" + dem)
+        console.log("rep" + rep + "dem" + dem);
         over(rep, dem);
+        displayChoices(quoteArray, selections);
     };
+
+    function displayChoices(c, d){
+      for(var i = 0; i < quoteArray.length; i++){
+        var card = $('<div>', {'class': 'card'});
+          if (selections[i] === "agree"){
+            var overlay = $('<div>',{'class': 'agree'});
+            card.append(overlay);
+          }else if (selections[i] === "disagree"){
+            overlay = $('<div>',{'class': 'disagree'});
+            card.append(overlay);
+          };
+        var quote = $('<p>').append(quoteArray[i].quote);
+        overlay.append(quote);
+        var speaker = $('<p>').append(quoteArray[i].speaker);
+        overlay.append(speaker);  
+        results.append(card);  
+      }
+      results.fadeIn();
+    }
  
   
   function over(a, b){
-    var results = $('<p>');
 
     results.append('You agree with ' + rep + 'rep quotes and ' + dem + 'dem quotes. You have disagreed with' + disrep + 'rep quotes and disagreed with' + disdem + 'quotes');
 
     score.append(results).fadeIn();
+
   };

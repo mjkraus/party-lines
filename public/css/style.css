@@ -1,4 +1,4 @@
-/*http://codepen.io/gcarino/pen/LDgtn/
+http://codepen.io/gcarino/pen/LDgtn/
 Dynamic JS Quiz*/
 
 body {
@@ -64,6 +64,35 @@ ul {
     margin: 0;
 }
 
+/*div .agree{
+    background: yellow;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+}*/
+
+/*div.agree p{
+    font-weight: bold;
+    font-color: white;
+}*/
+
+/*div .disagree{
+    background: green;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+}*/
+
 /*#prev {
     display:none;
 }
@@ -71,4 +100,4 @@ ul {
 /*#start {
     display:none;
     width: 90px;
-}*/
+}
