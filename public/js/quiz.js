@@ -5,62 +5,72 @@
     topic: "Immigration",
     quote: "I would secure the borders — north, south, east and west.",
     speaker: "Ben Carson",
-    party: "rep"
+    party: "rep",
+    image: "carson.png"
 
   }, {
     topic: "Gun Control",
     quote: "How many people have to die before we actually act?",
     speaker: "Hillary Clinton",
-    party: "dem"
+    party: "dem",
+    image: "clinton.png"    
 
   }, {
     topic: "Health Care",
     quote: "I don't support Obamacare. I want to repeal it.",
     speaker: "John Kasich",
-    party: "rep"
+    party: "rep",
+    image: "kasich.png"    
 
   }, {    
     topic: "Same-Sex Marriage",
     quote: "We should ban discrimination against L.G.B.T. Americans and their families so they can live, learn, marry and work just like everybody else.",
     speaker: "Hillary Clinton",
-    party: "dem"
+    party: "dem",
+    image: "clinton.png"    
 
   }, {
     topic: "N.S.A",
     quote: "I assume when I pick up my telephone, people are listening to my conversations anyway, if you want to know the truth. It’s pretty sad commentary. But I err on the side of security.",
     speaker: "Donald J Trump",
-    party: "rep"
+    party: "rep",
+    image: "trump.png"    
 
   }, {
 
     topic: "Syrian Refugees",
     quote: "We can’t background-check them. You can’t pick up the phone and call Syria, and that’s one of the reasons why I’ve said we won’t be able to take more refugees. It’s not that we don’t want to, it’s that we can’t.",
     speaker: "Marco Rubio",
-    party: "rep"
+    party: "rep",
+    image: "rubio.png"
 
   }, {
     topic: "Dealth Penalty",
     quote: "The state itself, in a democratic, civilized society, should itself not be involved in the murder of other Americans.",
     speaker: "Bernie Sanders",
-    party: "dem"
+    party: "dem",
+    image: "sanders.png"    
 
   }, {    
     topic: "Islamic State",
     quote: "We have got to be as aggressive as we can in destroying ISIS, but we have to learn the lessons of the past, and that means we cannot do it alone.",
     speaker: "Bernie Sanders", 
-    party: "dem"
+    party: "dem",
+    image: "sanders.png"    
 
   }, {
     topic: "China",
     quote: "China is on a campaign of territorial expansion, the intent of which is to kick America out of the Pacific.",
     speaker: "Ted Cruz",
-    party: "rep"
+    party: "rep",
+    image: "cruz.png"    
 
   }, {
     topic: "Climate Change",
     quote: "Climate change is threatening this planet in horrendous ways.",
     speaker: "Bernie Sanders",
-    party: "dem"     
+    party: "dem",
+    image: "sanders.png"         
   }];
   
   var quoteCounter = 0; //Tracks question number
@@ -155,6 +165,8 @@
             overlay = $('<div>',{'class': 'disagree'});
             card.append(overlay);
           };
+        var image = $('<img>').attr('src','/img/'+quoteArray[i].image);
+        overlay.append(image);        
         var quote = $('<p>').append(quoteArray[i].quote);
         overlay.append(quote);
         var speaker = $('<p>').append(quoteArray[i].speaker);
