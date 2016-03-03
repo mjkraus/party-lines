@@ -2,6 +2,7 @@
 // Same-Sex Marriage, Israel, Climate Change, Trans-Pacific Partnership, Syrian No-Fly Zone,
 // N.S.A,China
 // http://blog.kevinchisholm.com/javascript/getting-started-with-highcharts-part-i-basic-charts/
+
   var quoteArray = [{
     topic: "Immigration",
     quote: '"I would secure the borders — north, south, east and west."',
