@@ -9,7 +9,7 @@
 // http://www.pewresearch.org/fact-tank/2014/06/12/7-things-to-know-about-polarization-in-america/
 
 $(function () {
-    $('#test').highcharts({
+    $('#test2').highcharts({
         chart:{
             margin:[0, 0, 0, 0],
             backgroundColor:'transparent'

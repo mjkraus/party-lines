@@ -183,5 +183,4 @@
     results.append('You agree with ' + rep + 'rep quotes and ' + dem + 'dem quotes. You have disagreed with' + disrep + 'rep quotes and disagreed with' + disdem + 'quotes');
 
     score.append(results).fadeIn();
-
   };    

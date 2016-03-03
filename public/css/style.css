@@ -69,7 +69,49 @@ ul {
     padding: 0;
     margin: 0;
 }
+body{ margin:0px 0px; }
 
+/*http://www.web2feel.com/creating-a-fullscreen-hero-div-for-your-site-header/*/
+#hero{
+  /*background-image:url(https://images.unsplash.com/photo-1432837600650-e430234b632a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969fadd59386e3a52d05a48b7cd8be5d);*/
+  background-image:url('../img/flag.jpeg');
+  background-size:cover;
+  position:relative;
+  height:100vh;
+}
+
+.header{
+    font-family: 'Quattrocento', serif; 
+    font-weight: 400; 
+/*    font-size: 40px;*/
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:45px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+
+}
+
+#something{
+  padding:100px 50px;
+  text-align:center;
+  width:80%;
+  margin:0px auto;
+}
+
+#something h2{
+  margin:0px 0px 30px 0px;
+}
+
+#footer{
+  padding:30px 0px;
+  text-align:center;
+  background:#ddd;
+}
 /*div .agree{
     background: yellow;
     height: 100%;
