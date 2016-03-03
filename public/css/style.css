@@ -4,9 +4,6 @@ Dynamic JS Quiz*/
 /*unsplash.com*/
 
 body {
-/*    font-family: Open Sans;*/
-/*    font-family: 'Quattrocento', serif;*/
-    /*title font font-weight: 400, 700;*/
     font-family: 'Fanwood Text', serif;
     font-weight: 400;
     text-align: justify;
@@ -27,25 +24,6 @@ h1 {
     text-indent: 10px;
     display:none;
 }
-
-#container {
-/*    width:50%;
-    margin:auto;
-    padding: 0 25px 40px 10px;
-    background-color: #1E90FF;*/
-/*    border:4px solid #B0E0E6;*/
-/*    border-radius:5px;
-    color: #FFFFFF;
-    font-weight: bold;
-    box-shadow: 5px 5px 5px #888;*/
-}
-
-/*ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}*/
-/*body{ margin:0px 0px; }*/
 
 /*http://www.web2feel.com/creating-a-fullscreen-hero-div-for-your-site-header/*/
 /*transition between 2 images*/
@@ -97,8 +75,13 @@ div #intro{
 /*    font-style: bold;*/
 }
 
-.col-md-6.col-md-offset-3{
+.col-md-8.col-md-offset-2.quiz-table{
+    text-align: center;
+    border: 1px solid black;
+}
 
+.disagree{
+    opacity: .5;
 }
 
 /*div.container-fluid{
@@ -109,7 +92,14 @@ div.container-fluid h2{
     color: white;
 }*/
 
-
+div.row.final-results{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    height: 50%;
+/*    border: 1px solid black;*/
+}
 
 
 /*#something{
@@ -126,6 +116,6 @@ div.container-fluid h2{
 #footer{
   padding:30px 0px;
   text-align:center;
-  background:#ddd;
+  background:white;
 }
 
