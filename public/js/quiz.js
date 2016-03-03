@@ -84,7 +84,6 @@
   var dem = 0;
   var disdem = 0;
 
-
   displayNext();
 
 
