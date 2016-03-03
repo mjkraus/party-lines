@@ -13,6 +13,14 @@ $(document).ready(function() {
     };
   });
 
+//   $(function () {
+//     $(window).scroll(function () {
+//         var currentScrollTop = $(window).scrollTop();
+//         $('#blackOverlay').css('opacity',currentScrollTop/$('#blackOverlay').height());
+
+//     });
+// });
+
   //FIND OUT HOW TO FADE FROM BLACK 
 
   //   $(window).scroll(function() {
