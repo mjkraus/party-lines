@@ -184,7 +184,7 @@
   
   function over(a, b){
 
-    results.append('You agree with ' + rep + 'rep quotes and ' + dem + 'dem quotes. You have disagreed with' + disrep + 'rep quotes and disagreed with' + disdem + 'quotes');
+    var quoteResults = $('<p>').text('You agree with ' + rep + ' quotes from Republicans and ' + dem + ' quotes from Democrats. You have disagreed with ' + disrep + ' quotes from Republicans and ' + disdem + ' quotes from Democrats');
 
-    score.append(results).fadeIn();
+    score.append(quoteResults).fadeIn();
   };    
