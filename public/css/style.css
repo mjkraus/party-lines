@@ -159,7 +159,7 @@ div.row.final-results{
 
 .col-md-8.col-md-offset-2.quiz-table{
     margin-top: 2.5em;
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
     position: absolute;
     min-height: 414px;
 }
@@ -190,15 +190,6 @@ button#agree{
   margin-bottom: 1em;
   margin-top: 1em;
 
-}
-
-/*#quiz-wrapper{
-  position: relative;
-}*/
-
-#footer{
-  background-color: black;
-  padding:50px 0px;
 }
 
 
