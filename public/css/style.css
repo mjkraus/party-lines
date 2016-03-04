@@ -192,4 +192,8 @@ button#agree{
 
 }
 
+#restartButton {
+  display: none;
+}
+
 

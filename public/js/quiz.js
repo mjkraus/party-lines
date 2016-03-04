@@ -87,7 +87,6 @@
 
   displayNext();
 
-
   function createQuote(index) {
     var createQuoteDiv = $('<div>', {
       id: 'quote'
@@ -178,13 +177,13 @@
         row.append(card2);  
         results.append(row);  
       }
+      $('#restartButton').css("display", "block");
       results.fadeIn();
-    }
- 
-  
+    };
+
   function over(a, b){
 
     var quoteResults = $('<p>').text('You agree with ' + rep + ' quotes from Republicans and ' + dem + ' quotes from Democrats. You have disagreed with ' + disrep + ' quotes from Republicans and ' + disdem + ' quotes from Democrats');
 
     score.append(quoteResults).fadeIn();
-  };    
+  };  
