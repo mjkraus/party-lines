@@ -71,8 +71,23 @@ div #intro{
 
 .point-title h2{
     font-family: 'Quattrocento', serif;
-    text-align: justify;
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
+
 /*    font-style: bold;*/
+}
+
+.point-title-one h2{
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+    padding-bottom: .5em;
 }
 
 .col-md-8.col-md-offset-2.quiz-table{
@@ -100,7 +115,58 @@ div.row.final-results{
     height: 50%;
 /*    border: 1px solid black;*/
 }
+/*/////////////////////////////////////////////*/
 
+.pullquote {
+  padding: 25px 20px 30px 43px;
+  margin: 0 20px 10px -30px;
+  width: 245px;
+  display: inline-block;
+  float: left;
+/*  font: 30px/32px 'Questrial', "founders-grotesk-x-cn-nypost", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;*/
+  color: #FFF;
+  text-transform: uppercase;
+  background: #2F2F2F
+}
+
+.topquote,
+.bottomquote {
+  margin-top: 12px;
+  margin-left: -36px;
+  float: left;
+  font-style: normal;
+  font-size: 137px;
+  font-family: sans-serif;
+  line-height: 32px;
+  height: 32px;
+  width: 28px;
+  color: #F7CB00;
+}
+
+.bottomquote {
+  margin-top: 32px;
+  float: right;
+}
+
+.attribution {
+  /*font: bold 26px/28px 'Questrial', "founders-grotesk-x-cn-nypost", Helvetica, sans-serif;*/
+  color: #C33;
+  width: auto;
+  display: block;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.img-insert img{
+    max-width: 245px;
+    min-height: 145px; 
+    display: inline-block;
+    float: right;
+/*    padding: 25px 20px 30px 43px;*/
+    margin: 0px -30px 10px 20px;
+
+}
 
 /*#something{
   padding:100px 50px;
@@ -113,9 +179,16 @@ div.row.final-results{
   margin:0px 0px 30px 0px;
 }*/
 
+/*/////////////////////////////////////////////////*/
+
 #footer{
   padding:30px 0px;
   text-align:center;
   background:white;
 }
+
+/*#point_one{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}*/
 

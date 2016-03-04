@@ -1,42 +1,142 @@
 // ========================
 // ========================
-// sparkline charts
+// Democrat Liberal Chart
 // ========================
 // ========================
 
-// http://jsfiddle.net/cainmodyo/VhxDA/  
-// http://jsfiddle.net/gh/get/jquery/1.7.1/highslide-software/highcharts.com/tree/master/samples/highcharts/tooltip/backgroundcolor-gradient/
+// Chart style inspired by Bar Chart Chris Nager using Highcharts.js
+// http://codepen.io/chrisnager/pen/kGucB
 // http://www.pewresearch.org/fact-tank/2014/06/12/7-things-to-know-about-polarization-in-america/
 
-$( '.chart--bar' ).highcharts({
+$( '#democrat-liberal-bar' ).highcharts({
   "chart": {
     "type": "bar"
   },
   "credits": {
-    "enabled": false
+    "enabled": true,
+    "href": "http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/pp-2014-06-12-polarization-0-05/",
+    "text":"Data Provided by Pew Research Center"
   },
-  "title": null,
+    "title": {
+      "text": "Democrats Shift to the Left",
+        "margin": 15,
+          "style": {
+              "fontSize": "20px",
+              "fontWeight": "normal",
+              "textTransform": "uppercase",
+              "color": "#0000"
+          }
+    },
   "plotOptions": {
     "bar": {
       "pointWidth": 25,
       "color": "#90d6f3",
       "colorByPoint": true,
       "colors": [
-        "#90d6f3",
-        "#61c5ef",
-        "#0fa0dd"
+        "#043574"
       ]
     },
   },
   "xAxis": {
     "min": 0,
     "title": {
-      "text": null
+      "text": "Years",
+        "margin": 15,
+          "style": {
+              "fontSize": "10px",
+              "fontWeight": "normal",
+              "textTransform": "uppercase",
+              "color": "#0000"
+          }  
+      },
+    "categories": [
+      "1994",
+      "2004",
+      "2014"
+    ]
+  },
+  "yAxis": {
+      "title": {
+          "text": "Percentage of Consistently liberal Democrats on a 10-item scale of political values",
+          "margin": 15,
+          "style": {
+              "fontSize": "10px",
+              "fontWeight": "normal",
+              "textTransform": "uppercase",
+              "color": "#0000"
+          }
+      },
+      "labels": {
+          "style" : {
+              "fontSize": "12px",
+              "color": "#0000"
+          }
+      }
+  },
+  "legend": {
+    "enabled": false
+  },
+  "series": [
+    {"name": "Percentage of Democrats Consistently Liberal",
+      "type": "bar",
+      "data": [
+        70,
+        68,
+        94
+      ]
+    }
+  ]
+});
+
+// ==============================================
+//         REPUBLICAN CHART
+// ==============================================        
+
+$( '#republican-conservative-bar' ).highcharts({
+  "chart": {
+    "type": "bar"
+  },
+  "credits": {
+    "enabled": true,
+    "href": "http://www.people-press.org/2014/06/12/political-polarization-in-the-american-public/pp-2014-06-12-polarization-0-05/",
+    "text":"Data Provided by Pew Research Center"
+  },
+    "title": {
+      "text": "Republicans Shift to the Right",
+        "margin": 15,
+          "style": {
+              "fontSize": "20px",
+              "fontWeight": "normal",
+              "textTransform": "uppercase",
+              "color": "#0000"
+          }
+    },         
+  "plotOptions": {
+    "bar": {
+      "pointWidth": 25,
+      "color": "#90d6f3",
+      "colorByPoint": true,
+      "colors": [
+        "#ca0516"
+      ]
+    },
+  },
+  "xAxis": {
+    "min": 0,
+    "title": {
+      "text": "Years",
+        "margin": 15,
+          "style": {
+              "fontSize": "10px",
+              "fontWeight": "normal",
+              "textTransform": "uppercase",
+              "color": "#0000"
+          }        
     },
       "labels": {
           "style" : {
               "textTransform": "uppercase",
-              "color": "#222"
+              "color": "#0000"
           }
       },
     "categories": [
@@ -47,19 +147,19 @@ $( '.chart--bar' ).highcharts({
   },
   "yAxis": {
       "title": {
-          "text": "Posts by People",
+          "text": "Percentage of Consistently Conservative Republicans on a 10-item scale of political values",
           "margin": 15,
           "style": {
               "fontSize": "10px",
               "fontWeight": "normal",
               "textTransform": "uppercase",
-              "color": "#bbb"
+              "color": "#0000"
           }
       },
       "labels": {
           "style" : {
               "fontSize": "12px",
-              "color": "#222"
+              "color": "#0000"
           }
       }
   },
@@ -67,12 +167,12 @@ $( '.chart--bar' ).highcharts({
     "enabled": false
   },
   "series": [
-    {"name": "percentage of democrates consistently liberal",
+    {"name": "Percentage of Republicans Consistently Conservative",
       "type": "bar",
       "data": [
+        64,
         70,
-        68,
-        94
+        92
       ]
     }
   ]
