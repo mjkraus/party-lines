@@ -1,7 +1,8 @@
-// quiz based on http://www.nytimes.com/interactive/2016/us/elections/candidates-on-the-issues.html
-// Same-Sex Marriage, Israel, Climate Change, Trans-Pacific Partnership, Syrian No-Fly Zone,
-// N.S.A,China
+// quiz based on 
+// http://www.nytimes.com/interactive/2016/us/elections/candidates-on-the-issues.html
 // http://blog.kevinchisholm.com/javascript/getting-started-with-highcharts-part-i-basic-charts/
+
+$(document).ready(function() {
 
   var quoteArray = [{
     topic: "Immigration",
@@ -91,9 +92,6 @@
     var createQuoteDiv = $('<div>', {
       id: 'quote'
     });
-    
-    // var header = $('<h2>Question ' + (index + 1) + ':</h2>');
-    // createQuoteDiv.append(header);
 
     var topic = $('<h3>').append(quoteArray[index].topic);
     createQuoteDiv.append(topic);
@@ -102,17 +100,14 @@
     createQuoteDiv.append(question);
     
     return createQuoteDiv;
-  }
+  };
 
   $('.choiceButton').click(function() {
     selections.push($(this).val());
     console.log(selections);
     ++quoteCounter;
     displayNext();
-    // if (selections.length == 6) {
-    //     alert("Hello! I am an alert box!!");
-    //  }
-});
+  });
 
   
   // Displays next requested element
@@ -186,4 +181,5 @@
     var quoteResults = $('<p>').text('You agree with ' + rep + ' quotes from Republicans and ' + dem + ' quotes from Democrats. You have disagreed with ' + disrep + ' quotes from Republicans and ' + disdem + ' quotes from Democrats');
 
     score.append(quoteResults).fadeIn();
-  };  
+  };
+  });  

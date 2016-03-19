@@ -1,5 +1,8 @@
     // Build the chart
-    $('#dem-pie-chart').highcharts({
+// ====================================
+// liberal pie chart
+// ====================================    
+    $('#liberal-pie-chart').highcharts({
       colors: ["#053afd", "#216ed2", "#83b2ef", "#043574", "#bec0c3"],
       chart: {
         backgroundColor: null,
@@ -81,10 +84,10 @@
 
 
 // ====================================
-// rep pie chart
+// conservative pie chart
 // ====================================
 
-    $('#rep-pie-chart').highcharts({
+    $('#conservative-pie-chart').highcharts({
       colors: ["#ca0516", "#bec0c3"],
       chart: {
         backgroundColor: null,
