@@ -48,7 +48,7 @@ $(document).ready(function() {
     image: "rubio.png"
 
   }, {
-    topic: "Dealth Penalty",
+    topic: "Death Penalty",
     quote: '"The state itself, in a democratic, civilized society, should itself not be involved in the murder of other Americans."',
     speaker: "Bernie Sanders",
     party: "dem",
